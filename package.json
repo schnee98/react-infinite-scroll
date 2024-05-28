@@ -1,0 +1,25 @@
+{
+  "name": "@schnee/react-infinite-scroll",
+  "version": "1.0.4",
+  "description": "utility to simplify to use infinite scroll in react",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "infinite",
+    "scroll"
+  ],
+  "author": "schnee",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
