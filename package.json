@@ -1,6 +1,6 @@
 {
   "name": "@schnee/react-infinite-scroll",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "utility to simplify to use infinite scroll in react",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
