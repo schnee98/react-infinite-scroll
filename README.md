@@ -38,6 +38,7 @@ const InfiniteScrollComponent = () => {
   return (
     <div>
       {/* Your content here */}
+      <div ref={observe}>Load More</div>
     </div>
   );
 };
@@ -104,9 +105,13 @@ const ExampleComponent = () => {
 
   return (
     <div>
-      {items.map((item, index) => (
-        <div key={index}>Item {index + 1}</div>
-      ))}
+      {items.map((item, index) =>
+        index === items.length - 1 ? (
+          <div key={index} ref={loadMoreRef}>Item {index + 1}</div>
+        ) : (
+          <div key={index}>Item {index + 1}</div>
+        )
+      )}
     </div>
   );
 };
